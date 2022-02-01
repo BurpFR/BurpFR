@@ -1,6 +1,35 @@
 <html>
-<h1>Username: tereko bheja hai check kar</h1>
-<br>
-<h1>Password: tirtha</h1>
+<style>
+body {
+  background-color: black;
+}
+</style>
 
+
+
+
+<SCRIPT>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Please Enter Your Password',' ');
+while (testV < 3) {
+if (!pass1)
+history.go(-1);
+if (pass1.toLowerCase() == "iloveyousanu") {
+alert('You Got it Right!');
+window.open('C:\\Users\\Student\\Downloads\\HTML\\hidden.html');
+break;
+}
+testV+=1;
+var pass1 =
+prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+}
+if (pass1.toLowerCase()!="password" & testV ==3)
+history.go(-1);
+return " ";
+}
+</SCRIPT>
+<center>
+<input type="button" value="press here for like gift or smth" onClick="passWord()" style="background-size: 30vw;"></input>
+</center>
 </html>
